@@ -1,0 +1,567 @@
+*,::after,::before{
+  box-sizing: inherit; 
+}
+div{
+  display: block;
+}
+img {
+  margin: auto;
+  height: auto;
+  max-width: 100%;
+}
+footer,header{
+  display: block;
+}
+h1 ,h2, h3 ,h4,h5,h6 {
+font-weight: 700;
+}
+body,h1 ,h2, h3 ,h4,h5,h6,html{
+  margin : 0 ;
+  padding : 0;
+}
+
+.primary .cont-one {
+  position: relative;
+  display: grid;
+  grid-template-columns: 43vw 14vw 43vw;
+  
+  
+}
+
+.primary .cont-one .col-one{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background : url(https://congresomontessori.com/images/2023/fondo-home-hero.jpg);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  position: relative;
+
+}
+.primary .cont-one .col-one::before {
+  content: '';
+  width: 43vw;
+  height: 80vh;
+  min-height: 700px;
+  background: rgba(80, 109 ,255 ,0.60 );
+  display: block;
+}
+.primary .cont-one .col-two{
+  grid-column: 3;
+  grid-row: 1;
+  position: relative;
+  display: flex;
+  background: #223983 ;
+}
+.primary .cont-one .col-two img {
+  width: 60% ;
+  min-width: 300px ;
+  margin: auto;
+}
+.primary .cont-one .col-three{
+ grid-column-start: 2;
+ grid-column-end: 4;
+ grid-row: 2;
+ position: relative;
+ background: #fff;
+ display: flex;
+}
+.primary .cont-one .col-three img{
+  width: 60% ;
+  min-width: 300px ;
+  margin: auto;
+
+}
+.secondary .cont-two{
+  position: relative;
+  display: grid;
+  grid-template-columns: 80vw 20vw;
+}
+
+.secondary .cont-two .col-one {
+  grid-column: 1;
+  grid-row:1;
+  height: 10vw;
+  background: #223983;
+}
+
+.secondary .cont-two .col-two {
+  grid-column-start: 2 ;
+  grid-row-start:1;
+  grid-row-end: 3;
+  background: #03B7A0;
+
+}
+.secondary .cont-two .col-three{
+  background: #fff;
+  /* height : 20vw; */
+  grid-row :2;
+  grid-column :1;
+  padding: 75px 40px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.secondary .cont-two .col-three * {
+  font-weight : 500 ;
+  color: #8c8c8c;
+  font-size: 22px;
+}
+.secondary .cont-two .col-three .mb-3{
+  margin-bottom : 0.75rem;
+}
+.secondary .cont-two .col-three .line-separador {
+  width : 100%;
+  max-width :870px;
+  height : 2px;
+}
+.secondary .cont-two .col-three .line-separador .bg-green {
+  background: #03B7A0;
+}
+.secondary .cont-two .col-three .count-reverse{
+  width :100%;
+  max-width :870px;
+}
+.secondary .cont-two .col-three .align-items-center {
+  align-items: center;
+}
+.secondary .cont-two .col-three .justify-center {
+  justify-content: center;
+}
+.secondary .cont-two .col-three .is-flex {
+  display: flex;
+}
+.secondary .cont-two .col-three .mt-4 {
+  margin-top :1rem;
+}
+.secondary .cont-two .col-three .flex-column {
+  display :flex;
+  flex-direction :column;
+}
+.secondary .cont-two .col-three .mx-3 {
+  margin-right : 0.75rem;
+  margin-left : 0.75rem;
+}
+.tertiary .cont-three {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20vw 23vw 56vw;
+}
+.tertiary .cont-three .col-one{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background: url(https://congreso.richarenas.dev/_next/static/media/home-section-3.be617785.jpg) 100%/cover no-repeat;
+ position: relative;
+}
+.tertiary .cont-three .col-one::after{
+  content: '';
+  background: #03B7A0;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+}
+
+.tertiary .cont-three .col-two {
+  position: relative;
+  grid-row: 1;
+  grid-column: 3;
+  padding: 200px 60px 60px;
+}
+.tertiary .cont-three .col-two .texto {
+  font-size: 40px;
+  margin-bottom : 40px;
+  color: #223983;
+}
+.tertiary .cont-three .col-two .concept p{
+  font-size: 17px;
+  margin-bottom : 25px;
+  color:#8c8c8c;
+}
+
+.tertiary .cont-three .col-three {
+  position: relative;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 2;
+ /*  padding-left : calc(23vw + 60vw); *//* calcular el valor del espaciado (padding) izquierdo de un elemento. */
+  background: #223983;
+  /* padding-right : 200px; */
+  padding-bottom : 40px;
+  padding-top : 40px; /* Por ejemplo, si tienes un párrafo de texto y aplicas "padding bottom: 20px;", se agregarán 20 píxeles de espacio en blanco entre el último renglón de texto y el borde inferior del párrafo.
+
+  Puedes utilizar propiedades de CSS como padding-top, padding-right, padding-bottom y padding-left para controlar el espacio de relleno en las diferentes partes de un elemento. Estas propiedades son útiles para ajustar el diseño y el espaciado en una página web, y son comunes en la creación de márgenes y espaciados uniformes entre elementos.
+   */
+}
+.tertiary .cont-three .col-three {
+  text-align: center;
+}
+.tertiary .cont-three .col-three .texto {
+  color: #fff;
+  font-size: 35px;
+}
+.quaternary .cont-four {
+  position: relative;
+  display: grid;
+  grid-template-columns: 43vw 56vw;
+}
+.quaternary .cont-four .col-one {
+  padding: 120px 60px 60px ;
+  grid-column: 1;
+  /* grid-row: 1; */
+  position: relative;
+  background: #03B7A0;
+}
+
+.quaternary .cont-four .col-one img {
+  width : 60% ;
+  min-width : 200px ;
+  margin: auto;
+}
+.quaternary .cont-four .col-two {
+  position: relative;
+  grid-column: 2;
+  padding: 120px 60px 100px;
+}
+.quaternary .cont-four .col-two p{
+font-weight:700 ;
+color: #223983;
+font-size: 17px;
+}
+.quaternary .cont-four .col-two .subtitulo {
+margin-bottom: 40px ;
+font-size: 30px;
+color: #223983;
+}
+.quaternary .cont-four .col-two .concept p {
+  font-size: 17px;
+  margin-bottom : 25px;
+  color:#8c8c8c;
+
+}
+.botton-1,.botton-2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58afd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.draw-border:hover {
+  color: #ffe593;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #ffe593;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+a{
+  padding: 15px 20px;
+  display: inline-flex;
+ /*  box-shadow: 2.12px 2.12px 0 rgba(103,182,160,.33); */
+  transition:.4s;
+  font-weight: 700;
+  transform: translate(0);
+  text-decoration: none;
+  cursor: pointer;
+  color: #485fc7;
+
+}
+
+.quinary .cont-five {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60vw 40vw;
+}
+
+ .quinary .cont-five .col-one{
+  padding: 110px 60px 100px;
+  grid-column: 1;
+  position: relative;
+  padding-left: 100px;
+  display: flex;
+}
+
+.quinary .cont-five .col-one p {
+  font-weight:700 ;
+  color: #223983;
+  font-size: 17px; 
+
+}
+.quinary .cont-five .col-one .subtitulo{
+  margin-bottom: 40px ;
+  font-size: 30px;
+  color: #223983;
+}
+.quinary .cont-five .col-one .concept p {
+  font-size: 17px;
+  margin-bottom : 25px;
+  color:#8c8c8c;
+
+}
+.quinary .cont-five .col-two {
+  position: relative;
+  grid-row-start: 1;
+  grid-row-end: 3 ;
+  grid-column: 2;
+  background: #2e3c80;
+   padding: 110px 60px 60px;  
+   
+
+} 
+ .quinary .cont-five .col-two img {
+  position: relative;
+  z-index: 3;
+ }
+ .quinary .cont-five .col-three {
+  position: relative;
+  grid-column: 1;
+  grid-row: 2;
+  background: url(https://congreso.richarenas.dev/_next/static/media/home-section-5-2.1c8b3cd5.jpg) 50%/cover no-repeat;
+
+ }
+ .quinary .cont-five .col-three::after{
+    content: "";
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    background: #03b7a0;
+    min-height: 500px;
+    opacity: .5
+ }
+ 
+ .quinary .cont-five .col-two::after{
+  content: "";
+  position: absolute;
+  bottom : 0;
+  left : 0;
+  z-index: 1;
+  width : 100%;
+  height : calc(100% - 390px);
+  background: url(https://congreso.richarenas.dev/_next/static/media/home-section-5-1.8e14ba57.jpg) 50%/cover no-repeat;
+ }
+ .quinary .cont-five .col-two::before{ 
+  content: "";
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2e3c80;
+  opacity: .5;
+}
+.senatorial .cont-six {
+  position: relative;
+  display: grid;
+  grid-template-columns: 40vw 60vw;
+}
+.senatorial .cont-six .col-one {
+  grid-column: 1;
+  position: relative;
+  display: flex;
+}
+.senatorial .cont-six .col-one img {
+  margin-top : -330px;
+  height : auto;
+  max-width : 100%; 
+}
+.ml-auto{
+  margin-left : auto;
+}
+.mb-auto{
+  margin-bottom : auto;
+}
+.senatorial .cont-six .col-two {
+  position: relative;
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 110px 60px 60px;
+
+}
+/* .pr-200 {
+  padding-right : 200px;
+} */
+.senatorial .cont-six .col-two .texto {
+  max-width : 577px;
+  width : 100%;
+  display: inline-block;
+}
+.senatorial .cont-six .col-two .texto p {
+  margin: 0;
+  padding: 0;
+  color: #8c8c8c;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 20px;
+}
+.stylelink{
+  color: #223983;
+  font-size: 29px;
+  margin-top : 40px;
+  display: inline-block;
+}
+.senatorial .cont-six .col-two .icons{
+  margin-top : 20px;
+  display: flex;
+}
+.senatorial .cont-six .col-two .face{
+  margin-right : 20px;
+  display: flex;
+
+
+}
+.senatorial .cont-six .col-two .ig{
+display: flex;
+
+}
+.senatorial .cont-six .col-two .icons img {
+  z-index: 3;
+  position: relative;
+}
+
+.wrap {
+  flex-wrap: wrap
+  /* La propiedad flex-wrap en CSS se utiliza en combinación con Flexbox para controlar cómo los elementos hijos de un contenedor flex se envuelven o ajustan cuando no caben todos en una sola línea */;
+}
+.is-flex{
+  display: flex;
+}
+.logo-footer{
+  display: flex;
+  padding: 0 40px 0 0;
+  position: relative;
+}
+.bg-green {
+  background: #03B7A0;
+}
+
+.logo-footer::before {
+  content: "";
+  height : 100%;
+  display: flex;
+  width : 200px;
+  padding-top : 180px;
+  background: #223983;
+  padding-bottom : 180px;
+  box-sizing :inherit;
+}
+.column{
+ /*  display: block; */
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+ /*  padding: 0.75rem; */
+}
+ footer.logo-footer img {
+  max-width : 250px;
+  margin: auto 40px;
+}
+.bg-darkblue{
+  background: #223983;
+}
+.is-paddingless{
+  padding: 0;
+}
+.address,footer .rrss{
+  padding-left : 100px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.font-17{
+  font-size: 17px;
+  color: #fff;
+}
+.has-margin-left-70{
+  margin-left : 70px;
+}
+.has-margin-left-50{
+  margin-left : 50px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.bg-blue {
+  background-color: #274295;
+}
+.is-full-width {
+  width : 100%;
+}
+
+.color-green {
+  color: #03B7A0;
+}
+.has-margin-right-40 {
+  margin-right : 40px;
+}
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+.align-items-center {
+  align-items: center;
+}
+.has-text-white {
+  color: #fff;
+}
+.has-margin-right-5 {
+  margin-right : 5px;
+}
+.bg-lightblue {
+  background: #2c489e;
+}
+.is-full-width {
+  width : 100%;
+}
+.has-text-centered {
+  text-align : center;
+}
