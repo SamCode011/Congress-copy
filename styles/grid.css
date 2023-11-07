@@ -121,6 +121,7 @@ body,h1 ,h2, h3 ,h4,h5,h6,html{
 .secondary .cont-two .col-three #count-reverse{
   width :100%;
   max-width :870px;
+  text-align: center;
 }
 .secondary .cont-two .col-three .align-items-center {
   align-items: center;
