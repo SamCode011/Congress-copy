@@ -15,6 +15,19 @@ const getRemainTime = deadline => {
 
 
         }
+    }
 
-};
-console.log(getRemainTime())
+const countdown = (deadline,elem,finalMessage) => {
+    const el = document.getElementById(elem);
+    const timerUpdate = setInterval ( () => {
+        let t = getRemainTime(deadline);
+        el.innerHTML = `${t.remainDays}d:${t.remainHours}h:${t.remainMinutes}m:${remainSeconds}s`;
+
+        if (t.remainTime <= 1) {
+            clearInterval (timerUpdate);
+            el.innerHTML = finalMessage;
+        }
+    },1000)
+}
+countdown(' Nov 06 2023 22:25:06 GMT-0500','count-reverse','')
+console.log(getRemainTime('Nov 08 2023 22:25:06 GMT-0500'))
