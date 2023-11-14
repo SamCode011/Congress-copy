@@ -489,22 +489,20 @@ display: flex;
   content: "";
   height : 100%;
   display: flex;
-  width : 200px;
   padding-top : 180px;
   background: #223983;
   padding-bottom : 180px;
-  box-sizing :inherit;
 }
-.column{
- /*  display: block; */
+/* .column{
+  display: block;
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
- /*  padding: 0.75rem; */
-}
+  padding: 0.75rem;
+} */
  footer.logo-footer img {
-  max-width : 250px;
-  margin: auto 40px;
+  max-width : 340px;
+  margin: auto ;
 }
 .bg-darkblue{
   background: #223983;
