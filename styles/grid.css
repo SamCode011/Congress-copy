@@ -567,17 +567,34 @@ span {
 } */
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: repeat(3,auto) ;
-  grid-template-areas: "container-left container-center container-right" 
-                       "container-left container-center container-rightdown"
-                       "container-copyright container-copyright container-copyright";
-  flex: wrap;
-  display: flex;
+  grid-template-columns: 1fr 2fr 1fr 1fr ;
+  grid-template-rows: repeat(4,auto) ;
+  grid-template-areas: "container-left container-center container-right container-right" 
+                       "container-left container-center container-rightdown container-rightdown"
+                       "container-left container-center container-rightdown container-rightdown"
+                       "container-copyright container-copyright container-copyright container-copyright";
+  flex :wrap;
+  display: block;
   font-style: inherit;                
 }
+.container .container-one {
+  padding: 0%;
+  display: block;
+}
 
-.container .container-left {
+.container .container-one .mixing .column  {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+  width : calc(100% / 3)!important;
+  max-width : calc(100% / 3);
+
+
+}
+
+.container .container-one .container-left {
   grid-column-start: container-left;
   grid-column-end: container-left;
   content: "";
@@ -588,9 +605,8 @@ span {
   background: #223983;
   padding-bottom : 180px;
   box-sizing :inherit;
-
 }
-.container .container-center {
+.container .container-one .container-center {
   background: #03B7A0;
   grid-area: container-center;
   display: flex;
@@ -598,10 +614,10 @@ span {
   padding: 0 40px 0 0;
   max-width :320px;
   margin: auto 40px;
-
 }
-.container .container-right {
-  background: #2e3c80;
+
+.container .container-two .container-right {
+  background:#223983;
   grid-area: container-right;
   padding-left : 100px;
   display: flex;
@@ -609,19 +625,20 @@ span {
   color: #fff;
 
 }
-.container .container-rightdown {
-  background: #485fc7;
-  grid-area: container-right;
+.container .container-two .container-rightdown {
+  background: #274295;
+  grid-area: container-rightdown;
   color:#fff;
   align-items: center;
+  display: flex;
+  text-align: center;
 }
-.container .container-copyright {
-  background: #223983;
+.container .container-two .container-copyright {
+  background: #2c489e;
   grid-area: container-copyright;
   align-items: center;
   color: #fff;
   text-align: center;
-  width: 100%;
-  font-weight: inherit;
-
+  width : 100%;
+  display: flex;
 }
