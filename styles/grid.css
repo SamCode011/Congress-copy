@@ -573,17 +573,31 @@ span {
                        "container-left container-center container-rightdown"
                        "container-copyright container-copyright container-copyright";
   flex: wrap;
-  display: flex;                
+  display: flex;
+  font-style: inherit;                
 }
 
 .container .container-left {
-  background:#223983 ;
   grid-column-start: container-left;
   grid-column-end: container-left;
+  content: "";
+  height : 100%;
+  display: flex;
+  width : 200px;
+  padding-top : 180px;
+  background: #223983;
+  padding-bottom : 180px;
+  box-sizing :inherit;
+
 }
 .container .container-center {
   background: #03B7A0;
   grid-area: container-center;
+  display: flex;
+  position: relative;
+  padding: 0 40px 0 0;
+  max-width :320px;
+  margin: auto 40px;
 
 }
 .container .container-right {
@@ -597,4 +611,10 @@ span {
 .container .container-copyright {
   background: #223983;
   grid-area: container-copyright;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  font-weight: inherit;
+
 }
