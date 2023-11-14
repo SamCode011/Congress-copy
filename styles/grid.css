@@ -535,6 +535,9 @@ display: flex;
   display: flex;
   text-align: center;
 }
+.container .container-two .container-rightdown p {
+  color: #fff;
+}
 .container .container-two .container-copyright {
   background: #2c489e;
   grid-area: container-copyright;
