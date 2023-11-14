@@ -468,9 +468,9 @@ display: flex;
   position: relative;
 }
 
-.wrap {
+/* .wrap {
   flex-wrap: wrap
-  /* La propiedad flex-wrap en CSS se utiliza en combinación con Flexbox para controlar cómo los elementos hijos de un contenedor flex se envuelven o ajustan cuando no caben todos en una sola línea */;
+  La propiedad flex-wrap en CSS se utiliza en combinación con Flexbox para controlar cómo los elementos hijos de un contenedor flex se envuelven o ajustan cuando no caben todos en una sola línea;
 }
 .is-flex{
   display: flex;
@@ -493,13 +493,13 @@ display: flex;
   background: #223983;
   padding-bottom : 180px;
   box-sizing :inherit;
-}
-.column{
- /*  display: block; */
+} */
+/* .column{
+  display: block;
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
- /*  padding: 0.75rem; */
+  padding: 0.75rem;
 }
  footer.logo-footer img {
   max-width : 250px;
@@ -516,8 +516,8 @@ display: flex;
   display: flex;
   align-items: center;
   color: #fff;
-}
-.font-17{
+} */
+/* .font-17{
   font-size: 17px;
   color: #fff;
 }
@@ -564,4 +564,37 @@ span {
 }
 .has-text-centered {
   text-align : center;
+} */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: repeat(3,auto) ;
+  grid-template-areas: "container-left container-center container-right" 
+                       "container-left container-center container-rightdown"
+                       "container-copyright container-copyright container-copyright";
+  flex: wrap;
+  display: flex;                
+}
+
+.container .container-left {
+  background:#223983 ;
+  grid-column-start: container-left;
+  grid-column-end: container-left;
+}
+.container .container-center {
+  background: #03B7A0;
+  grid-area: container-center;
+
+}
+.container .container-right {
+  background: #2e3c80;
+  grid-area: container-right;
+}
+.container .container-rightdown {
+  background: #485fc7;
+  grid-area: container-right;
+}
+.container .container-copyright {
+  background: #223983;
+  grid-area: container-copyright;
 }
