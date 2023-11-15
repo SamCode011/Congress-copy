@@ -129,5 +129,40 @@ a {
 .nav-desplegable .active {
     left :0;
     box-shadow :0 0 30px rgb(46, 60, 128,.25);
-    
+
+}
+.font-14 {
+    font-size: 14px;
+}
+.bg-darkblue {
+    background: #223983;
+}
+.mt-auto {
+    margin-top : auto;
+}
+.has-text-white {
+    color: #fff;
+}
+.font-29 {
+    font-size: 29px;
+
+}
+.has-margin-top-20 {
+    margin-top : 20px;
+}
+.align-items-center {
+    align-items: center;
+}
+.is-flex {
+    display: flex;
+}
+.has-margin-right-5 {
+    margin-right :5px;
+}
+img {
+    height :auto;
+    max-width :100%;
+}
+.has-margin-top-15 {
+    margin-top :15px;
 }

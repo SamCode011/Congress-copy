@@ -3,11 +3,11 @@
         font-size: 17px;
     }
 }
-/* @media screen and (max-width : 1366px){
-    .primary .cont-one .col-one::before{
-        width : 40vw;
-    }
-} */
+
+@media screen and (max-width : 1400px){
+    .font-29  {
+        font-size: 24px;
+    }}
 @media screen and (max-width :1600px) {
     .primary .cont-one .col-one::before{
         min-height : 500px;
