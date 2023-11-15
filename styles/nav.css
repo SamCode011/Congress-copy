@@ -1,0 +1,133 @@
+
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+ul{
+    list-style: none;
+}
+header nav {
+    position: fixed;
+    top : 0;
+    left : 0 ;
+    z-index: 1024;
+}
+header nav .open-nav {
+    width :80px;
+    height : 80px;
+    background: #03b7a0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .8s;
+    box-sizing: content-box;
+
+}
+
+header nav .open-nav span::after {
+    top : 11px;
+}
+
+header nav .open-nav span::before {
+    top : -11px;
+}
+header nav .open-nav span::after ,header nav .open-nav span::before{
+    width :30px;
+    height :4px;
+    display: flex;
+    background: #fff;
+    content: "";
+    position: absolute;
+    left : 0;
+    transform: translate(0) rotate(0deg);
+    transition: .3s;
+
+}
+header nav .open-nav .active span::before {
+    left :50%;
+    transform: translate(-50% ,-50%) rotate(45deg);
+    top :50%;
+}
+header nav .open-nav .active span::after {
+    left : 50%;
+    top  : 50%;
+    transform :translate(-50%,-50%)rotate(-45deg);
+}
+header nav .open-nav span {
+    width :40px;
+    height :4px;
+    display: flex;
+    background: #fff;
+    position: relative;
+    transition: .3s;
+ }
+ header nav .open-nav .active span {
+    width :0;
+ }
+ header nav .open-nav .active {
+    padding-left : 240px;
+}
+.nav-desplegable {
+    width :320px ;
+    height :100vh ;
+    background: #fff;
+    position: absolute;
+    padding: 80px 0 0;
+    top : 0 ; 
+    left : -320px;
+    z-index :-1;
+    transition: .8s;
+    box-shadow : 0 0 0 rgb(46, 60, 128 ,.25);
+    display: flex;
+    flex-direction: column;
+}
+.nav-desplegable ul {
+    padding: 40px;
+    margin-top :60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-desplegable ul li a::after {
+    content: "";
+    background: #03b7a0;
+    width :0;
+    position: absolute;
+    bottom : 0 ;
+    height :3px;
+    transition: .3s;
+}
+a {
+    color: #485fc7;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-desplegable ul li a:hover::after,.nav-desplegable ul li.active a:after {
+    width :100%;
+}
+
+.nav-desplegable ul li a {
+    position: relative;
+    margin-bottom :10px;
+    padding-bottom :5px;
+    display: inline-flex;
+    color: #223983;
+}
+.font-bold {
+    font-weight: 700;
+}
+.font-20 {
+    font-size: 20px;
+}
+.rss-nav {
+    padding: 30px;
+    margin-top :auto;
+}
+.nav-desplegable .active {
+    left :0;
+    box-shadow :0 0 30px rgb(46, 60, 128,.25);
+    
+}
