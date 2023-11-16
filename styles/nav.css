@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&display=swap');
-header {
+header nav {
     background: #fff;
     font-family:'Poppins',sans-serif;
+    position: fixed;
+    top : 0;
+    left : 0;
+    z-index: 1024;
 
 }
 .nav {
@@ -30,7 +34,15 @@ header {
     flex-direction: column;
     border-radius: 0 16px 16px 0;
     background: #fff;
+    z-index: -1;
+    left :0;
+    position: absolute;
     
+    
+}
+.list .active {
+    left : 0;
+    box-shadow: 0 0 30px rgba(46,60,128,.25);
 }
 
 .list_item {
@@ -66,4 +78,22 @@ header {
     list-style: none;
     transition: height .4s;
     height : 0;
+}
+/* OPEN */
+.nav .open-nav {
+    width : 80px;
+    height : 80px;
+    background: #03b7a0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .8s;
+    box-sizing: content-box;
+    
+    
+}
+.nav .open-nav .active {
+    padding-left : 240px
 }
