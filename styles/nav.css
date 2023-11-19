@@ -43,6 +43,7 @@ header nav {
 .list .active {
     left : 0;
     box-shadow: 0 0 30px rgba(46,60,128,.25);
+    
 }
 
 .list_item {
@@ -95,5 +96,10 @@ header nav {
     
 }
 .nav .open-nav .active {
-    padding-left : 240px
+    padding-left : 240px ;
+    
+    
+}
+.active {
+ 
 }

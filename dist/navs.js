@@ -14,3 +14,19 @@ listElements.forEach(listElement => {
        menu.style.height= `${height}px` 
     })
 })
+ 
+ let navActive = document.querySelectorAll('.click-active');
+
+navActive.forEach(activation => {
+    activation.addEventListener('click',()=> {
+        activation.classList.toggle('active');
+        let height = 0 ;
+        let principal = activation.nextElementSibling;
+        if (principal.clientHeight=="0") {
+            height=null ;
+        }
+        principal.style.height=height;
+    })
+})
+   
+ 
