@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&display=swap');
 header nav {
-    background: #fff;
+    /* background: #fff; */
     font-family:'Poppins',sans-serif;
     position: fixed;
     top : 0;
@@ -32,17 +32,23 @@ header nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-radius: 0 16px 16px 0;
+   /*  border-radius: 0 16px 16px 0; */
     background: #fff;
     z-index: -1;
-    left :0;
+    /* left :0; */
+    padding-left : 20px;
     position: absolute;
+    transition: .5s;
     
     
 }
 .list .active {
     left : 0;
     box-shadow: 0 0 30px rgba(46,60,128,.25);
+
+
+
+  
     
 }
 
@@ -95,11 +101,25 @@ header nav {
     
     
 }
-.nav .open-nav .active {
+.nav .open-nav.active {
     padding-left : 240px ;
-    
-    
+    background: #fff;
 }
-.active {
- 
-}
+
+
+.click-active {
+    cursor: pointer;
+  }
+
+  .click-active.active + .content {
+    height: 0;
+  }
+
+  .click-active:not(.active) + .content {
+    height: auto;
+  }
+
+  .content {
+    overflow: hidden;
+    transition: height 0.5s;
+  }
