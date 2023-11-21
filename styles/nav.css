@@ -45,11 +45,6 @@ header nav {
 .list .active {
     left : 0;
     box-shadow: 0 0 30px rgba(46,60,128,.25);
-
-
-
-  
-    
 }
 
 .list_item {
@@ -112,14 +107,17 @@ header nav {
   }
 
   .click-active.active + .content {
-    height: 0;
+    height : 0;
   }
 
   .click-active:not(.active) + .content {
-    height: auto;
+    height : auto;
   }
 
   .content {
     overflow: hidden;
     transition: height 0.5s;
   }
+  
+
+

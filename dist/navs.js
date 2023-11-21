@@ -2,9 +2,9 @@ let listElements = document.querySelectorAll('.list_button--click');
 
 listElements.forEach(listElement => {
     listElement.addEventListener('click',()=>{
-        activation.classList.remove('active');
+      /*   activation.classList.remove('active');
         let principal = activation.nextElementSibling;
-        principal.style.height = '0';
+        principal.style.height = '0'; */
 
         listElement.classList.toggle('arrow');
 
