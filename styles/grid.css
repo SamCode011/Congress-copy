@@ -20,6 +20,7 @@ body,h1 ,h2, h3 ,h4,h5,h6,html{
   padding : 0;
 }
 
+
 .primary .cont-one {
   position: relative;
   display: grid;
@@ -118,10 +119,9 @@ body,h1 ,h2, h3 ,h4,h5,h6,html{
 .secondary .cont-two .col-three .line-separador .bg-green {
   background: #03B7A0;
 }
-.secondary .cont-two .col-three #count-reverse{
+.secondary .cont-two .col-three .count-reverse{
   width :100%;
   max-width :870px;
-  text-align: center;
 }
 .secondary .cont-two .col-three .align-items-center {
   align-items: center;
@@ -489,20 +489,22 @@ display: flex;
   content: "";
   height : 100%;
   display: flex;
+  width : 200px;
   padding-top : 180px;
   background: #223983;
   padding-bottom : 180px;
+  box-sizing :inherit;
 }
-/* .column{
-  display: block;
+.column{
+ /*  display: block; */
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  padding: 0.75rem;
-} */
+ /*  padding: 0.75rem; */
+}
  footer.logo-footer img {
-  max-width : 340px;
-  margin: auto ;
+  max-width : 250px;
+  margin: auto 40px;
 }
 .bg-darkblue{
   background: #223983;
