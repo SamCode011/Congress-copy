@@ -1,0 +1,44 @@
+div ,header,main,footer{
+    display: block;
+}
+img {
+    margin: auto;
+    height :auto;
+    max-width : 100;
+}
+h1 ,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+
+.primary .cont-one  {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50vw 0vw 48.8vw;
+}
+
+.primary .cont-one .col-one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background : url(https://congresomontessori.com/images/2023/fondo-home-hero.jpg);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+}
+
+.primary .cont-one .col-one::before {
+    display: block;
+    content: '';
+    width :50vw;
+    height :48.5vw;
+    min-height :629px;
+    background: rgba(80, 109 ,255 ,0.60);
+}
+
+.primary .cont-one .col-two {
+    position: relative;
+    display: flex;
+    background: #58afd1;
+    grid-column:3;
+    grid-row: 1;
+  
+}

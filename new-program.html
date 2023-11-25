@@ -11,11 +11,103 @@
     <link rel="stylesheet" href="./styles new-tab/styles.css">
     <link rel="stylesheet" href="./styles new-tab/mediascreem.css">
     <link rel="stylesheet" href="./styles new-tab/grid.css">
+    <link rel="stylesheet" href="./styles/nav.css">
     <title>new-tab</title>
 </head>
 
 <body>
+    <header>
+        <nav class="nav">
 
+            <div class="open-nav active click-active  ">
+                <img src="./styles/icons/bars-solid.svg" id="bars">
+                <div class="content" id="content1"></div>
+            </div>
+            <ul class="list active " style="width : 0px;">
+
+                <li class="list_item list_item--click">
+                    <div class="list_button list_button--click">
+                        <img src="./styles/icons/bx-home.svg" class="list_img">
+                        <a href="#" class="nav_link">Home</a>
+                        <img src="./styles/icons/bx-chevron-right.svg" class="list_arrow" alt="">
+                    </div>
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <div class="ghost "></div>
+                            <img src="./styles/icons/bx-ghost.svg" class="ghost-click">
+                            <a href="./index.html" class="nav_link nav_link--inside">text</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="list_item list_item--click">
+                    <div class="list_button list_button--click">
+                        <img src="./styles/icons/bx-crown.svg" class="list_img">
+                        <a href="#" class="nav_link">Premiun</a>
+                        <img src="./styles/icons/bx-chevron-right.svg" class="list_arrow" alt="">
+                    </div>
+                    <ul class="list_show">
+
+                        <li class="list_inside">
+                            <div class="ghost "></div>
+                            <img src="./styles/icons/bx-ghost.svg" class="ghost-click">
+                            <a href="#" class="nav_link nav_link--inside">text</a>
+
+                        </li>
+
+                        <li class="list_inside">
+                            <div class="ghost "></div>
+                            <img src="./styles/icons/bx-ghost.svg" class="ghost-click">
+                            <a href="#" class="nav_link nav_link--inside">text</a>
+
+                        </li>
+
+                        <li class="list_inside">
+                            <div class="ghost "></div>
+                            <img src="./styles/icons/bx-ghost.svg" class="ghost-click">
+                            <a href="#" class="nav_link nav_link--inside">text</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="list_item list_item--click">
+                    <div class="list_button list_button--click">
+                        <img src="./styles/icons/bx-hive.svg" class="list_img">
+                        <a href="#" class="nav_link">Programa</a>
+                        <img src="./styles/icons/bx-chevron-right.svg" class="list_arrow" alt="">
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="primary">
+            <div class="cont-one">
+                <div class="col-one"></div>
+                <div class="col-two">
+                   <!--  <video width="600" controls>
+                        <source src="./video/59674_Camera on a tripod at the boardwalk _By_Liran_Friedman_Artlist_HD.mp4">
+                    </video> -->
+                </div>
+                <div class="col-three"></div>
+            </div>
+        </div>
+
+        <div class="secondary">
+            <div class="cont-two">
+                <div class="col-one"></div>
+                <div class="col-two"></div>
+                <div class="col-three"></div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+
+<script src="./dist/navs.js"></script>
 </body>
-
 </html>
