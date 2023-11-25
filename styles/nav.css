@@ -35,16 +35,14 @@ header nav {
    /*  border-radius: 0 16px 16px 0; */
     background: #fff;
     z-index: -1;
-    /* left :0; */
-    padding-left : 20px;
     position: absolute;
     transition: .5s;
     
     
 }
-.list .active {
-    left : 0;
-    box-shadow: 0 0 30px rgba(46,60,128,.25);
+.list.active {
+    width :20rem;
+    transition: .8s;
 }
 
 .list_item {
@@ -81,6 +79,17 @@ header nav {
     transition: height .4s;
     height : 0;
 }
+.ghost {
+    list-style: none;
+    display:flex ;
+    position:fixed ;
+    padding : 0 70px 0 ;
+    padding-top :12px ;
+    overflow: hidden;
+   }
+.ghost-click {
+    cursor: pointer;
+}
 /* OPEN */
 .nav .open-nav {
     width : 80px;
@@ -107,17 +116,31 @@ header nav {
   }
 
   .click-active.active + .content {
-    height : 0;
+    height : 0;/* ... */
   }
 
   .click-active:not(.active) + .content {
-    height : auto;
+    height : auto;/* ... */
   }
 
   .content {
     overflow: hidden;
-    transition: height 0.5s;
+    transition: height 0.5s;/* ..... */
   }
-  
+
+  .nav .open-nav img {
+   
+    padding: 0 20px 0;
+    margin: auto 2px;
+    transition: opacity 0.5s ease-in-out;
+   
+
+  }
+  .oculto {
+    opacity: 0;
+    pointer-events: none;
+   
+  }
+ 
 
 
