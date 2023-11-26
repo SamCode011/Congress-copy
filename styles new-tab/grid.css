@@ -121,7 +121,10 @@ body ,h1 ,h2, h3 ,h4,h5,h6,html{
     /* La propiedad flex-wrap en CSS se utiliza en combinaciÃ³n con Flexbox para controlar cÃ³mo los elementos hijos de un contenedor flex se envuelven o ajustan cuando no caben todos en una sola lÃ­nea */;
   }
   .is-flex{
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .logo-footer{
     display: flex;
