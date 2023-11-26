@@ -4,16 +4,20 @@ div ,header,main,footer{
 img {
     margin: auto;
     height :auto;
-    max-width : 100;
+    max-width : 100%;
 }
 h1 ,h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
-
+body ,h1 ,h2, h3 ,h4,h5,h6,html{
+    margin: 0;
+    padding:0;
+}
 .primary .cont-one  {
     position: relative;
     display: grid;
-    grid-template-columns: 50vw 0vw 48.8vw;
+    grid-template-columns: 50vw 0vw 50vw;
+    grid-template-rows: 24vw;
 }
 
 .primary .cont-one .col-one {
@@ -31,7 +35,7 @@ h1 ,h2,h3,h4,h5,h6 {
     width :50vw;
     height :48.5vw;
     min-height :629px;
-    background: rgba(80, 109 ,255 ,0.60);
+    background: rgba(80, 109 ,255 ,0.20);
 }
 
 .primary .cont-one .col-two {
@@ -40,5 +44,75 @@ h1 ,h2,h3,h4,h5,h6 {
     background: #58afd1;
     grid-column:3;
     grid-row: 1;
+    place-items: center;
+    height : 24vw;
   
+}
+.primary .cont-one .col-two video {
+    padding: 0 60px 0;
+    margin: 1vw;
+}
+.primary .cont-one .col-three {
+    display: flex;
+    position : relative;
+    background: rgb(255, 255, 255);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2;
+}
+
+.primary .cont-one .col-three img {
+    width : 60%;
+    min-width : 300px;
+    margin: auto;
+}
+
+.secondary .cont-two  {
+    position: relative;
+    display: grid;
+    grid-template-columns: 30vw 0vw 70vw;
+}
+.secondary .cont-two .col-one {
+    position: relative;
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    background:#223983 ;
+    height :10vw ;
+    width : 100vw;
+}
+
+.secondary .cont-two .col-two {
+    position: relative;
+    display: flex;
+    grid-column:1 ;
+    grid-row: 2;
+    background: #58afd1;
+    height : 31vw;
+    width : 30vw;
+
+}
+.secondary .cont-two .col-three {
+    position: relative;
+    grid-row: 2;
+    background: #fff;
+    width : 70vw;
+    padding:  120px 60px 100px;
+}
+.secondary .cont-two .col-three .title {
+    font-weight :700;
+    color: #223983;
+    font-size: 17px;
+}
+.secondary .cont-two .col-three .sub {
+    margin-bottom :40px;
+    font-size: 30px;
+    color: #223983;
+}
+.secondary .cont-two .col-three .concept p {
+    font-size: 17px;
+    margin-top :25px;
+    color: #8c8c8c;
+    font-weight: 700;
 }
