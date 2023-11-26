@@ -116,3 +116,100 @@ body ,h1 ,h2, h3 ,h4,h5,h6,html{
     color: #8c8c8c;
     font-weight: 700;
 }
+wrap {
+    flex-wrap: wrap
+    /* La propiedad flex-wrap en CSS se utiliza en combinaciÃ³n con Flexbox para controlar cÃ³mo los elementos hijos de un contenedor flex se envuelven o ajustan cuando no caben todos en una sola lÃ­nea */;
+  }
+  .is-flex{
+    display: flex;
+  }
+  .logo-footer{
+    display: flex;
+    padding: 0 40px 0 0;
+    position: relative;
+  }
+  .bg-green {
+    background: #03B7A0;
+  }
+  
+  .logo-footer::before {
+    content: "";
+    height : 100%;
+    display: flex;
+    width : 200px;
+    padding-top : 180px;
+    background: #223983;
+    padding-bottom : 180px;
+    box-sizing :inherit;
+  }
+  .column{
+   /*  display: block; */
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+   /*  padding: 0.75rem; */
+  }
+   footer.logo-footer img {
+    max-width : 250px;
+    margin: auto 40px;
+  }
+  .bg-darkblue{
+    background: #223983;
+  }
+  .is-paddingless{
+    padding: 0;
+  }
+  .address,footer .rrss{
+    padding-left : 100px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  .font-17{
+    font-size: 17px;
+    color: #fff;
+  }
+  .has-margin-left-70{
+    margin-left : 70px;
+  }
+  .has-margin-left-50{
+    margin-left : 50px;
+  }
+  .font-14 {
+    font-size: 14px;
+  }
+  .bg-blue {
+    background-color: #274295;
+  }
+  .is-full-width {
+    width : 100%;
+  }
+  
+  .color-green {
+    color: #03B7A0;
+  }
+  .has-margin-right-40 {
+    margin-right : 40px;
+  }
+  span {
+    font-style: inherit;
+    font-weight: inherit;
+  }
+  .align-items-center {
+    align-items: center;
+  }
+  .has-text-white {
+    color: #fff;
+  }
+  .has-margin-right-5 {
+    margin-right : 5px;
+  }
+  .bg-lightblue {
+    background: #2c489e;
+  }
+  .is-full-width {
+    width : 100%;
+  }
+  .has-text-centered {
+    text-align : center;
+  }
