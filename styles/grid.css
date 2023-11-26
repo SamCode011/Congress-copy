@@ -115,13 +115,12 @@ body,h1 ,h2, h3 ,h4,h5,h6,html{
   width : 100%;
   max-width :870px;
   height : 2px;
+  background: #03B7A0
 }
-.secondary .cont-two .col-three .line-separador .bg-green {
-  background: #03B7A0;
-}
-.secondary .cont-two .col-three .count-reverse{
+.secondary .cont-two .col-three #count-reverse{
   width :100%;
   max-width :870px;
+  text-align: center;
 }
 .secondary .cont-two .col-three .align-items-center {
   align-items: center;
@@ -469,23 +468,38 @@ display: flex;
   position: relative;
 }
 
-.wrap {
-  flex-wrap: wrap
-  /* La propiedad flex-wrap en CSS se utiliza en combinación con Flexbox para controlar cómo los elementos hijos de un contenedor flex se envuelven o ajustan cuando no caben todos en una sola línea */;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr ;
+  grid-template-rows: repeat(4,auto) ;
+  grid-template-areas: "container-left container-center container-right container-right" 
+                       "container-left container-center container-rightdown container-rightdown"
+                       "container-left container-center container-rightdown container-rightdown"
+                       "container-copyright container-copyright container-copyright container-copyright";
+  flex :wrap;
+  display: block;
+  font-style: inherit;                
 }
-.is-flex{
-  display: flex;
-}
-.logo-footer{
-  display: flex;
-  padding: 0 40px 0 0;
-  position: relative;
-}
-.bg-green {
-  background: #03B7A0;
+/* .container .container-one {
+  padding: 0%;
+  display: block;
 }
 
-.logo-footer::before {
+.container .container-one .mixing .column  {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+  width : calc(100% / 3)!important;
+  max-width : calc(100% / 3);
+
+
+}
+
+.container .container-one .container-left {
+  grid-column-start: container-left;
+  grid-column-end: container-left;
   content: "";
   height : 100%;
   display: flex;
@@ -495,74 +509,42 @@ display: flex;
   padding-bottom : 180px;
   box-sizing :inherit;
 }
-.column{
- /*  display: block; */
-  flex-basis: 0;
-  flex-grow: 1;
-  flex-shrink: 1;
- /*  padding: 0.75rem; */
-}
- footer.logo-footer img {
-  max-width : 250px;
+.container .container-one .container-center {
+  background: #03B7A0;
+  grid-area: container-center;
+  display: flex;
+  position: relative;
+  padding: 0 40px 0 0;
+  max-width :320px;
   margin: auto 40px;
 }
-.bg-darkblue{
-  background: #223983;
-}
-.is-paddingless{
-  padding: 0;
-}
-.address,footer .rrss{
+ */
+.container .container-two .container-right {
+  background:#223983;
+  grid-area: container-right;
   padding-left : 100px;
   display: flex;
   align-items: center;
   color: #fff;
-}
-.font-17{
-  font-size: 17px;
-  color: #fff;
-}
-.has-margin-left-70{
-  margin-left : 70px;
-}
-.has-margin-left-50{
-  margin-left : 50px;
-}
-.font-14 {
-  font-size: 14px;
-}
-.bg-blue {
-  background-color: #274295;
-}
-.is-full-width {
-  width : 100%;
-}
 
-.color-green {
-  color: #03B7A0;
 }
-.has-margin-right-40 {
-  margin-right : 40px;
-}
-span {
-  font-style: inherit;
-  font-weight: inherit;
-}
-.align-items-center {
+.container .container-two .container-rightdown {
+  background: #274295;
+  grid-area: container-rightdown;
+  color:#fff;
   align-items: center;
+  display: flex;
+  text-align: center;
 }
-.has-text-white {
+.container .container-two .container-rightdown p {
   color: #fff;
 }
-.has-margin-right-5 {
-  margin-right : 5px;
-}
-.bg-lightblue {
+.container .container-two .container-copyright {
   background: #2c489e;
-}
-.is-full-width {
+  grid-area: container-copyright;
+  align-items: center;
+  color: #fff;
+  text-align: center;
   width : 100%;
-}
-.has-text-centered {
-  text-align : center;
+  display: flex;
 }

@@ -29,5 +29,9 @@ const countdown = (deadline,elem,finalMessage) => {
         }
     },1000)
 }
+<<<<<<< HEAD
 countdown(' Nov 25 2024 14:08:06 GMT-0500','count-reverse','final')
+=======
+countdown(' Nov 14 2024 22:50:06 GMT-0500','count-reverse','final')
+>>>>>>> footer
 /* console.log(getRemainTime('Nov 08 2023 22:25:06 GMT-0500')) */
