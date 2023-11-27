@@ -9,7 +9,7 @@ header nav {
 
 }
 .nav {
-    width :300px;
+    width : 1297px;
 }
 
 .nav_link {
@@ -28,11 +28,11 @@ header nav {
 
 .list {
     width :100%;
-    height :100vh;
+    /* height :100vh; */
     display: flex;
     justify-content: center;
-    flex-direction: column;
-   /*  border-radius: 0 16px 16px 0; */
+   /*  flex-direction: column;  */
+    /*  border-radius: 0 16px 16px 0; */
     background: #fff;
     z-index: -1;
     position: absolute;
@@ -40,10 +40,10 @@ header nav {
     
     
 }
-.list.active {
+/* .list.active {
     width :20rem;
     transition: .8s;
-}
+} */
 
 .list_item {
     list-style: none;
@@ -92,8 +92,8 @@ header nav {
 }
 /* OPEN */
 .nav .open-nav {
-    width : 80px;
-    height : 80px;
+    /* width : 80px; */
+    height : 90px;
     background: #03b7a0;
     position: relative;
     display: flex;
@@ -105,11 +105,11 @@ header nav {
     
     
 }
-.nav .open-nav.active {
+/* .nav .open-nav.active {
     padding-left : 240px ;
     background: #fff;
 }
-
+ */
 
 .click-active {
     cursor: pointer;

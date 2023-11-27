@@ -4,16 +4,16 @@
 navActive.forEach(activation => {
     activation.classList.remove('active');
       let principal = activation.nextElementSibling;
-      principal.style.width = '0';
+      principal.style.height = '0';
 
     activation.addEventListener('click',()=> {
         activation.classList.toggle('active');
-        let width = 0 ;
+        let height = 0 ;
         let principal = activation.nextElementSibling;
-        if (principal.clientWidth=="0") {
-            width=null ;
+        if (principal.clientHeight=="0") {
+            height=null ;
         }
-        principal.style.width=width;
+        principal.style.height=height;
     })
 })
 /* Submenu */
