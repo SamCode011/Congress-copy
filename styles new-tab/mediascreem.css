@@ -20,7 +20,7 @@
 }
 @media screen and (max-width :749px){
    .primary .cont-one .col-one  {
-      padding: 0 5vw 0;
+      padding: 0 4vw 0;
       margin: -4vw;
    }
    .primary .cont-one .col-two video {
@@ -30,7 +30,7 @@
 }
 @media screen and (min-width :750px) and (max-width :761px) {
    .primary .cont-one .col-one  {
-      padding: 0 5vw 0;
+      padding: 0 4vw 0;
       margin: -4vw;
    }
    .primary .cont-one .col-two video {
@@ -40,7 +40,7 @@
 }
 @media screen and (min-width :762px) and (max-width :849px) {
    .primary .cont-one .col-one  {
-      padding: 0 5vw 0;
+      padding: 0 4vw 0;
       margin: -4vw;
    }
    .primary .cont-one .col-two video {
@@ -50,7 +50,7 @@
 }
 @media screen and (min-width :850px ) and (max-width :899px) {
    .primary .cont-one .col-one  {
-      padding: 0 5vw 0;
+      padding: 0 4vw 0;
       margin: -4vw;
    }
    .primary .cont-one .col-two video {
@@ -61,7 +61,7 @@
 }
 @media screen and (min-width :900px ) and (max-width : 960px ) {
    .primary .cont-one .col-one  {
-      padding: 0 5vw 0;
+      padding: 0 4vw 0;
       margin: -4vw;
    }
    .primary .cont-one .col-two video {
@@ -70,16 +70,16 @@
 }
 @media screen and (min-width :961px) and (max-width : 992px) {
    .primary .cont-one .col-one  {
-      padding: 0 5vw 0;
+      padding: 0 4vw 0;
       margin: -4vw;
    }
    .primary .cont-one .col-two video {
       width :500px;
    }
 }
-@media screen and (min-width :993px ) {
+@media screen and (min-width :993px ) and (max-width : 1061px) {
    .primary .cont-one .col-one  {
-      padding: 0 5vw 0;
+      padding: 0 4vw 0;
       margin: -4vw;
    }
    .primary .cont-one .col-two video {
