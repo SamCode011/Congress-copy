@@ -27,9 +27,13 @@ listElements.forEach(listElement => {
        if(menu.clientHeight=="0") {
         height=menu.scrollHeight;
        }
-       menu.style.height= `${height}px` 
+       menu.style.height= `${height}px` ;
+
+    
     })
 }) 
+
+  
 /* submenu-image */
 document.addEventListener('DOMContentLoaded',function() {
     let img = document.getElementById('bars');
@@ -41,11 +45,3 @@ document.addEventListener('DOMContentLoaded',function() {
        })
     })
 
-    document.addEventListener('DOMContentLoaded',function (){
-        let ghostElement =document.querySelector('.ghost');
-        let triggerElement =document.querySelector('.ghost-click');
-        triggerElement.addEventListener('click',function (){
-            ghostElement.style.display =ghostElement.style.display ==='none' ? 'flex' : 'none';
-        })
-    })
- 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Images</title>
+    <style>
+        /* Agrega algún estilo si es necesario */
+        .ghost {
+            display: none;
+            /* Agrega otros estilos según tus necesidades */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contenedor del primer subtema -->
+<div class="subtema">
+    <button class="ghost-click">Mostrar Imágenes</button>
+    <div class="ghost">
+        <!-- Imágenes del primer subtema -->
+        <img src="imagen1.jpg" alt="Ghost Image 1">
+        <img src="imagen2.jpg" alt="Ghost Image 2">
+        <!-- Agrega más imágenes según sea necesario -->
+    </div>
+</div>
+
+<!-- Contenedor del segundo subtema -->
+<div class="subtema">
+    <button class="ghost-click">Mostrar Imágenes</button>
+    <div class="ghost">
+        <!-- Imágenes del segundo subtema -->
+        <img src="imagen3.jpg" alt="Ghost Image 3">
+        <img src="imagen4.jpg" alt="Ghost Image 4">
+        <!-- Agrega más imágenes según sea necesario -->
+    </div>
+</div>
+
+<!-- Agrega más contenedores de subtemas según sea necesario -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Obtén todos los elementos con la clase ghost-click
+        let triggerElements = document.querySelectorAll('.ghost-click');
+
+        // Itera sobre cada elemento con la clase ghost-click
+        triggerElements.forEach(function (triggerElement) {
+            // Agrega un evento de clic a cada botón
+            triggerElement.addEventListener('click', function () {
+                // Encuentra el contenedor padre del botón clicado
+                let parentContainer = triggerElement.closest('.subtema');
+
+                // Encuentra el elemento ghost dentro del contenedor padre
+                let ghostElement = parentContainer.querySelector('.ghost');
+
+                // Alterna la visibilidad del elemento ghost dentro del contenedor padre
+                ghostElement.style.display = ghostElement.style.display === 'none' ? 'flex' : 'none';
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
